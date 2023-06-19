@@ -52,11 +52,6 @@ header {
   text-align: center;
 }
 
-.card.reverse {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-}
-
 .rating {
   display: flex;
   align-items: center;
@@ -121,6 +116,10 @@ input {
 
 input:focus {
   outline: none;
+}
+
+.feedback-list {
+  padding: 0 20px;
 }
 
 .feedback-stats {
