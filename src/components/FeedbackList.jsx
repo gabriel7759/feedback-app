@@ -1,4 +1,5 @@
-import FeedbackItem from "./FeedbackItem"
+import { PropTypes } from "prop-types";
+import FeedbackItem from "./FeedbackItem";
 
 function FeedbackList({ feedback}) {
 
@@ -12,7 +13,12 @@ function FeedbackList({ feedback}) {
                 <FeedbackItem key={row.id} item={row} />
             ))}
         </div>
-    )
+    );
 }
 
-export default FeedbackList
+FeedbackList.propTypes = {
+    feedback: PropTypes.array,
+};
+
+
+export default FeedbackList;
