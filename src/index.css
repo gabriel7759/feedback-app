@@ -118,10 +118,6 @@ input:focus {
   outline: none;
 }
 
-.feedback-list {
-  padding: 0 20px;
-}
-
 .feedback-stats {
   color: #fff;
   display: flex;
