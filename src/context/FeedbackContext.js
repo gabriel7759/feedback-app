@@ -22,9 +22,21 @@ export const FeedbackProvider = ({children}) => {
         }
     ]);
 
+    const [feedbackSelected, setFeedbackSelected] = useState({
+        item: {},
+        edit: false
+    });
+
     const addFeedback = (newFeedback) => {
         newFeedback.id = uuidv4();
         setFeedback([newFeedback, ...feedback]);
+    };
+
+    const editFeedback = (item) => {
+        setFeedbackSelected({
+            item,
+            edit: true
+        });
     };
 
     const deleteFeedback = (id) => {
@@ -36,7 +48,9 @@ export const FeedbackProvider = ({children}) => {
     return <FeedbackContext.Provider value={{
         feedback,
         addFeedback,
+        editFeedback,
         deleteFeedback,
+        feedbackSelected,
     }}>
         {children}
     </FeedbackContext.Provider>
