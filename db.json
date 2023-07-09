@@ -19,6 +19,11 @@
       "rating": "8",
       "text": "This is from postman",
       "id": 4
+    },
+    {
+      "text": "Otra test mas",
+      "rating": 8,
+      "id": 5
     }
   ]
 }
